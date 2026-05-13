@@ -1,50 +1,38 @@
-# LI_Content — LinkedIn AI Brain
+# LI_Content — The Prompt Vault & AI Brain
 
-This repository contains the core intelligence layer for a LinkedIn content generation system. It is built from the analysis of **3,121 high-performing LinkedIn posts** and **425 creator profiles**, extracted and structured for LLM reuse.
+This repository is a complete, fully mapped `.prompt-vault` for LinkedIn content generation and Go-To-Market (GTM) operations. 
 
-## Repository Structure
+It is built on top of a data-grounded "Brain" extracted from **3,121 high-performing LinkedIn posts** and **425 creator profiles**.
+
+## Vault Architecture
 
 ```
 LI_Content/
-├── skills/                           # Structured intelligence modules (plug-and-play for LLMs)
-│   ├── writing-patterns/SKILL.md     # Hook frameworks, post structures, CTA types, flow patterns
-│   ├── style-archetypes/SKILL.md     # 5 distinct creator styles with tone, structure, and usage
-│   ├── engagement-mechanics/SKILL.md # Psychological triggers, virality drivers, formatting rules
-│   ├── profile-intelligence/SKILL.md # Headline formulas, About section frameworks, positioning
-│   ├── component-library/SKILL.md    # Atomic hook, transition, and CTA templates
-│   └── dataset-insights/SKILL.md     # Quantitative benchmarks from the full dataset
-└── docs/
-    └── rawcontent.md                 # Raw pattern vault: swipe file, hooks, CTAs, headlines
+├── README.md                          ← How to use this vault
+├── rite-framework.md                  ← Role, Input, Task, Example — universal prompt wrapper
+├── brand-voice-bible.md               ← Tone, anti-tone, style — loaded on demand
+│
+├── data/                              ← Raw data sources (JSON profiles, CSV index, HTML posts)
+├── skills/                            ← 6 SKILL.md brain modules (patterns, archetypes, mechanics)
+├── docs/rawcontent.md                 ← Raw pattern vault (swipe file)
+│
+└── prompts/                           ← Canonical home for all GTM prompts
+    ├── positioning/                   ← ICP, messaging, VOC (Partially built)
+    ├── content-linkedin/              ← Posts, repurposing, angles (Fully built)
+    ├── email-ads-pr/                  ← Outbound, ads, PR (TODO)
+    ├── dashboards/                    ← Live GTM artifacts (TODO)
+    ├── sales-prospecting/             ← Research, audit, scraping (TODO)
+    └── ai-skills-setup/               ← Skills, migration, build (TODO)
 ```
 
-## Skills Overview
+## How to Use This Vault
 
-| Skill | Purpose |
-|---|---|
-| `writing-patterns` | Structural blueprints for post construction |
-| `style-archetypes` | Persona-based writing styles for tone matching |
-| `engagement-mechanics` | Algorithm and psychology-driven engagement tactics |
-| `profile-intelligence` | Profile copywriting frameworks for headlines and About sections |
-| `component-library` | Reusable atomic writing components |
-| `dataset-insights` | Data benchmarks for calibrating post length, format, and style |
+1. **The Brain (`/skills/` & `/data/`)**: This is the intelligence layer. It contains the structural patterns, psychological triggers, and raw data that make the prompts work.
+2. **The Framework (`rite-framework.md`)**: Every prompt follows the Role, Input, Task, Example structure.
+3. **The Prompts (`/prompts/`)**: These are the actual copy-paste prompts you feed to Claude, ChatGPT, or Manus. They automatically call upon the Brain to ensure high-quality, non-generic output.
 
-## Data Source
+## Current Status (Phase 1)
 
-- **Posts:** 3,121 scraped LinkedIn posts with likes, comments, and full text
-- **Profiles:** 425 LinkedIn profiles with positions, skills, headlines, and summaries
-- **Engagement tiers:** High (200+ likes), Mid (50–199), Low (<50)
-
-## Usage
-
-Each `SKILL.md` file contains valid YAML front matter and can be loaded directly into Manus as a skill. The `docs/rawcontent.md` file serves as a raw swipe file and pattern vault for prompt construction.
-
-```yaml
----
-name: writing-patterns
-description: "Structural writing patterns extracted from high-performing LinkedIn posts..."
----
-```
-
-## Last Updated
-
-May 2026 — based on dataset scraped May 10–12, 2026.
+- **Fully Built:** `/prompts/content-linkedin/` (Grounded in the 3,121 post dataset)
+- **Partially Built:** `/prompts/positioning/` (Grounded in the 425 profile dataset)
+- **TODO:** The remaining folders are currently stubs. They require your specific business data (email sequences, sales pipelines, ad copy) to be built out properly without relying on generic AI templates. See the `TODO.md` in each folder for instructions.
