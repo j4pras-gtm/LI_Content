@@ -58,3 +58,8 @@ Based on the cross-section of top posts and top profiles:
 1. **The "Giveaway" Engine:** The absolute highest comment counts (e.g., 2,749 comments, 1,599 comments) are exclusively driven by "Comment [Word] to get [Resource]" CTAs. This is the primary engine for algorithmic reach.
 2. **The "David vs. Goliath" Narrative:** Top posts frequently position a small, agile entity (a 27M parameter AI model, a solo founder using n8n) beating a massive incumbent (GPT-5, a traditional agency).
 3. **Extreme Niche Positioning:** Top profiles do not claim to be "Marketers" or "Salespeople." They claim highly specific, newly invented categories like "GTM Engineer" or "AI Automation Agency (AIAA) Founder."
+
+
+## Data Source Reference
+
+This skill is abstracted from the raw dataset. To run custom queries or extract new benchmarks, parse the raw data in `data/posts_scraped.html` and `data/profiles_425.json.gz`.

@@ -67,3 +67,8 @@ Transitions are used to move the reader from the hook into the meat of the post,
 ### The "Follow/Growth" CTA
 - "⚠️ Follow [Name] if you’re into [Topic 1], [Topic 2], and [Topic 3]."
 - "♻️ repost it and I'll DM it you instantly or wait 24h till my agent gets to you."
+
+
+## Data Source Reference
+
+This skill is abstracted from the raw dataset. For thousands of additional raw components, reference the full text bodies in `data/posts_scraped.html`.

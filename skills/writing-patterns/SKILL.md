@@ -87,3 +87,8 @@ High-performing posts follow predictable architectural flows.
 - **The 1-3-1 Rhythm:** One short sentence. A paragraph of three sentences. One short sentence. Creates visual breathing room.
 - **The "Broetry" Line Break:** Single sentences separated by double line breaks. Used heavily in the "Personal Narrative Arc" to force a slower reading pace.
 - **The Emoji Anchor:** Using specific emojis (🚨, ♻️, ↳) not for decoration, but as visual bullet points to guide the eye down the page.
+
+
+## Data Source Reference
+
+This skill is abstracted from the raw dataset. For full verbatim examples of these patterns, reference `data/posts_scraped.html`.

@@ -62,3 +62,8 @@ Based on the dataset of 3,121 posts and 425 profiles, top creators fall into dis
 > - Prompting frameworks
 > - API connections
 > Comment 'CODE' below and I'll DM you the link. (Must be connected)."
+
+
+## Data Source Reference
+
+This skill is abstracted from the raw dataset. To analyze the full post history of a specific archetype, cross-reference `data/posts_index.csv` with `data/posts_scraped.html`.

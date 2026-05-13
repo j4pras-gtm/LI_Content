@@ -67,3 +67,8 @@ The "About" section is rarely a standard resume summary. It functions as a sales
 - **Metric Dropping:** Embedding hard numbers directly into the headline or first line of the summary (e.g., "$6M ARR", "100K+ students", "48k+ followers").
 - **Brand Association:** Mentioning recognizable brands or platforms (e.g., "USA Today Bestselling Author", "TEDx Speaker", "Ex – Telenor Group").
 - **The "Contact Me" Gate:** Using the first line of the summary purely for inbound routing (e.g., "For brand collaboration: email@domain.com"), which signals high demand.
+
+
+## Data Source Reference
+
+This skill is abstracted from the raw dataset. For the complete raw profile data (including full work history and skills), parse `data/profiles_425.json.gz`.

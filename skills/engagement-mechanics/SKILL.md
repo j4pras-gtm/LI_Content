@@ -54,3 +54,8 @@ LinkedIn truncates posts after roughly 3-5 lines. The sole purpose of the first 
 - **Tactic 1: The Cliffhanger:** End line 3 mid-thought.
 - **Tactic 2: The Promise:** Line 3 states exactly what the reader will get if they expand the post ("Here is the exact 5-step framework:").
 - **Tactic 3: Visual Spacing:** Use double line breaks between the first three sentences to push the actual content below the "see more" fold, forcing the click.
+
+
+## Data Source Reference
+
+This skill is abstracted from the raw dataset. For raw engagement metrics (likes, comments, reposts) on specific posts, reference `data/posts_scraped.html`.
